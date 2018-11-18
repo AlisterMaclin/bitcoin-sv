@@ -1,7 +1,7 @@
 # Copyright (c) 2017 The Bitcoin developers
 
 cmake_minimum_required(VERSION 3.5)
-project(BitcoinSV)
+project(BitcoinABC)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -14,7 +14,7 @@ option(BUILD_BITCOIN_ZMQ "Activate the ZeroMQ functionalities" ON)
 option(BUILD_BITCOIN_SEEDER "Build bitcoin-seeder" ON)
 option(BUILD_BITCOIN_CLI "Build bitcoin-cli" ON)
 option(BUILD_BITCOIN_TX "Build bitcoin-tx" ON)
-option(BUILD_BITCOIN_BENCH "Build benchmarks" ON)
+option(BUILD_BITCOIN_QT "Build bitcoin-qt" ON)
 
 # Ensure that WINDRES_PREPROC is enabled when using windres.
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
@@ -137,6 +137,7 @@ add_library(common
 	coins.cpp
 	compressor.cpp
 	dstencode.cpp
+	globals.cpp
 	core_read.cpp
 	core_write.cpp
 	key.cpp
@@ -178,6 +179,7 @@ add_library(server
 	chain.cpp
 	checkpoints.cpp
 	config.cpp
+	globals.cpp
 	httprpc.cpp
 	httpserver.cpp
 	init.cpp
@@ -234,11 +236,6 @@ endif()
 # Test suite.
 add_subdirectory(test)
 
-# Benchmark suite
-if(BUILD_BITCOIN_BENCH)
-	add_subdirectory(bench)
-endif()
-
 # Wallet
 if(BUILD_BITCOIN_WALLET)
 	add_subdirectory(wallet)
@@ -286,4 +283,9 @@ add_executable(bitcoind bitcoind.cpp)
 target_link_libraries(bitcoind server)
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	target_sources(bitcoind PRIVATE bitcoind-res.rc)
+endif()
+
+# Bitcoin-qt
+if(BUILD_BITCOIN_QT)
+	add_subdirectory(qt)
 endif()

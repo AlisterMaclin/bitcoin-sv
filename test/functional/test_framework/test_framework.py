@@ -98,14 +98,13 @@ class BitcoinTestFramework():
                           help="Location of the test framework config file")
         parser.add_option("--pdbonfailure", dest="pdbonfailure", default=False, action="store_true",
                           help="Attach a python debugger if test fails")
-        parser.add_option("--waitforpid", dest="waitforpid", default=False, action="store_true",
-                          help="Display the bitcoind pid and wait for the user before proceeding. Useful for (eg) attaching a debugger to bitcoind.")
         self.add_options(parser)
         (self.options, self.args) = parser.parse_args()
 
         PortSeed.n = self.options.port_seed
 
-        os.environ['PATH'] = self.options.srcdir + ":" + os.environ['PATH']
+        os.environ['PATH'] = self.options.srcdir + ":" + \
+            self.options.srcdir + "/qt:" + os.environ['PATH']
 
         check_json_precision()
 
@@ -261,12 +260,8 @@ class BitcoinTestFramework():
         try:
             for i, node in enumerate(self.nodes):
                 node.start(extra_args[i])
-            for i, node in enumerate(self.nodes):
+            for node in self.nodes:
                 node.wait_for_rpc_connection()
-                if(self.options.waitforpid):
-                    print('Node {} started, pid is {}'.format(i, node.process.pid))
-                    print('Do what you need (eg; gdb ./bitcoind {}) and then press <return> to continue...'.format(node.process.pid))
-                    input()
         except:
             # If one node failed to start, stop the others
             self.stop_nodes()
