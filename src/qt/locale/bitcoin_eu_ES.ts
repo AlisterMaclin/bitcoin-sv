@@ -818,7 +818,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Aukerak</translation>

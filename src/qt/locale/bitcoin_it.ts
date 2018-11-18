@@ -2525,7 +2525,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Opzioni:</translation>
@@ -2583,8 +2583,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Impossibile avviare il server HTTP. Dettagli nel log di debug.</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin ABC</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>The %s developers</source>

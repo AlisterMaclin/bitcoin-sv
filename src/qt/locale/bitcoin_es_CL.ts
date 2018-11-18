@@ -750,7 +750,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:
@@ -772,8 +772,8 @@
 </translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>bitcoin abc</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>Error loading block database</source>

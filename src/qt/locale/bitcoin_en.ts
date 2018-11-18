@@ -3865,7 +3865,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+318"/>
         <source>Options:</source>
@@ -3953,8 +3953,8 @@
     </message>
     <message>
         <location line="-360"/>
-        <source>Bitcoin ABC</source>
-        <translation type="unfinished">Bitcoin ABC</translation>
+        <source>Bitcoin SV</source>
+        <translation type="unfinished">Bitcoin SV</translation>
     </message>
     <message>
         <location line="+1"/>

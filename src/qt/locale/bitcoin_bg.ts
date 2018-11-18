@@ -2328,7 +2328,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>
@@ -2346,8 +2346,8 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Биткойн ядро</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

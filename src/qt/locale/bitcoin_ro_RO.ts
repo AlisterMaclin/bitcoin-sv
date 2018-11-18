@@ -1568,7 +1568,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Opţiuni:</translation>
@@ -1594,8 +1594,8 @@
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>ABC Bitcoin</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

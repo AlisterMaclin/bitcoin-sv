@@ -652,7 +652,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Information</source>
         <translation>資訊</translation>

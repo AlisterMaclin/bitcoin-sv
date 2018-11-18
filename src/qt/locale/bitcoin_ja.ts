@@ -2988,7 +2988,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>オプション:</translation>
@@ -3058,8 +3058,8 @@
         <translation>HTTPサーバを開始できませんでした。詳細はデバッグログをご確認ください。</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin のコア</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>The %s developers</source>

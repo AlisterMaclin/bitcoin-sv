@@ -95,7 +95,7 @@ static void InitMessage(const std::string &message) {
  * Translate string to current locale using Qt.
  */
 static std::string Translate(const char *psz) {
-    return QCoreApplication::translate("bitcoin-abc", psz).toStdString();
+    return QCoreApplication::translate("bitcoin-sv", psz).toStdString();
 }
 
 static QString GetLangTerritory() {
@@ -182,7 +182,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext &context,
 #endif
 
 /**
- * Class encapsulating Bitcoin ABC startup and shutdown.
+ * Class encapsulating Bitcoin SV startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinABC : public QObject {
@@ -652,8 +652,8 @@ int main(int argc, char *argv[]) {
     QApplication::setOrganizationName(QAPP_ORG_NAME);
     QApplication::setOrganizationDomain(QAPP_ORG_DOMAIN);
     QApplication::setApplicationName(QAPP_APP_NAME_DEFAULT);
-    // Migrate settings from core's/our old GUI settings to Bitcoin ABC
-    // only if core's exist but Bitcoin ABC's doesn't.
+    // Migrate settings from core's/our old GUI settings to Bitcoin SV
+    // only if core's exist but Bitcoin SV's doesn't.
     // NOTE -- this function needs to be called *after* the above 3 lines
     // that set the app orgname and app name! If you move the above 3 lines
     // to elsewhere, take this call with you!

@@ -418,10 +418,10 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Биткойн ядро</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     </context>
 </TS>

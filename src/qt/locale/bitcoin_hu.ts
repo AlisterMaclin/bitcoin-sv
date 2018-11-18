@@ -1348,7 +1348,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-sv</name>
     <message>
         <source>Options:</source>
         <translation>Opciók
@@ -1378,8 +1378,8 @@
 </translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin ABC</translation>
+        <source>Bitcoin SV</source>
+        <translation>Bitcoin SV</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
