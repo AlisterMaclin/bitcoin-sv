@@ -45,7 +45,6 @@ src/univalue/gen
 *.pyc
 *.o
 *.o-*
-*.patch
 *.a
 *.pb.cc
 *.pb.h
